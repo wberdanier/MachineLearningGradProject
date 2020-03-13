@@ -4,11 +4,11 @@ This repo hosts my graduate capstone project for Data Science 100 at UC Berkeley
 
 # Task and Method
 
-The task for this project was to develop an image classifier from scratch. We were given 1500 sample images, split into training and testing sets (80-20), such as the one below:
+The task for this project was to develop an image classifier from scratch. We were given 1500 sample images, such as the one below:
 
 ![Example image file](sample_image.png) 
 
-Using scikit-learn, we extracted features, such as the Histogram-of-Gradients (HOG):
+We first split into training and test sets (90-10). Using scikit-learn, we extracted features, such as the Histogram-of-Gradients (HOG):
 
 ![Example image feature](sample_image_HOG.png)
 
