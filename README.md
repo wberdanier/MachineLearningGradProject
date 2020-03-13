@@ -34,7 +34,7 @@ Finally, we implemented two neural networks in order to improve this performance
 
 ![LeNet Architecture](LeNet.jpg) \[LeCun et al, 1998\]
 
-However, due to the fact that it was designed to work with MNIST (28 x 28 pixel images), when we downsampled our much larger images, the network did not do a particularly good job at precition. Remarkably, though, even this rather poor network still performed on par with our hand-tailored approach, yielding about 33% prediction accuracy. This network was trained from scratch on our laptops.
+However, due to the fact that it was designed to work with MNIST (28 x 28 pixel images), when we downsampled our much larger images, the network did not do a particularly good job at precition. Remarkably, though, even this rather poor network still performed on par with our hand-tailored approach, yielding about 33% prediction accuracy at its best. This network was trained from scratch on our laptops.
 
 ![LeNet Performance](neural_net_performance/LeNet.png)
 
