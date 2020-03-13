@@ -27,3 +27,9 @@ Once we had a sufficiently large feature matrix, we fitted to a variety of model
 ![LogisticRegression](model_performance/logreg.png) ![SVM](model_performance/SVM.png)
 
 In all, this tailored approach reached roughly 40% prediction accuracy on the test set.
+
+# Neural networks
+
+Finally, we implemented two neural networks in order to improve this performance. We began by implementing LeNet, a relatively simple early architecture designed to work on the MNIST handwritten digits dataset:
+
+![LeNet Architecture](LeNet.jpg) \[LeCun et al, 1998\]
