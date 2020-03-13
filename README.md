@@ -22,7 +22,7 @@ while our fancier attempts to develop cross-correlations within color channels, 
 
 # Model selection
 
-Once we had a sufficiently large feature matrix, we fitted to a variety of models in scikit-learn. In particular, we fit LogisticRegression, K-NearestNeighbors, RandomForest and SVM classifiers, which each had their strengths -- except for LogisticRegression, which performed worse when evaluated on the test set. In both plots below, the dashed line is random guessing.
+Once we had a sufficiently large feature matrix, we fitted to a variety of models in scikit-learn. In particular, we fit LogisticRegression, K-NearestNeighbors, RandomForest and SVM classifiers, which each had their strengths -- except for LogisticRegression, which performed worse when evaluated on the test set. To prevent overfitting (introduce bias in the hopes of reducing variance), we included a regularization parameter into the models, and used GridSearchCV to find the optimal regularization. In both plots below, the dashed line is random guessing.
 
 ![LogisticRegression](model_performance/logreg.png) ![SVM](model_performance/SVM.png)
 
