@@ -16,3 +16,6 @@ We then analyzed how well these features distinguished among categories. For ins
 
 ![Average saturation](avg_sat.png) ![Maximum of HOG](max_hog.png)
 
+while our fancier attempts to develop cross-correlations within color channels, such as the correlation function of the green and blue channels, did not:
+
+![Green-Blue correlation](gb_corr.png)
