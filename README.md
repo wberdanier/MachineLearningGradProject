@@ -33,3 +33,15 @@ In all, this tailored approach reached roughly 40% prediction accuracy on the te
 Finally, we implemented two neural networks in order to improve this performance. We began by implementing LeNet, a relatively simple early architecture designed to work on the MNIST handwritten digits dataset:
 
 ![LeNet Architecture](LeNet.jpg) \[LeCun et al, 1998\]
+
+However, due to the fact that it was designed to work with MNIST (28 x 28 pixel images), when we downsampled our much larger images, the network did not do a particularly good job at precition. Remarkably, though, even this rather poor network still performed on par with our hand-tailored approach, yielding about 40% prediction accuracy as well. This network was trained from scratch on our laptops.
+
+![LeNet Performance](neural_net_performance/LeNet.jpg)
+
+To do better, we used the ResNet-18 architecture within pytorch. We first attempted to train this from scratch, though quickly found that this was impractical without a GPU. So, we decided to try "transfer learning" -- taking a previously trained ResNet and re-training it on our particular set of images. This was quite successful, achieving a 94% success rate after relatively minimal training (about two hours on a laptop CPU). 
+
+![ResNet Learning](neural_net_performance/resnet.png)![ResNet Performance](neural_net_performance/resnet_accuracy.png)
+
+# This repo
+
+This repo hosts all jupyter notebooks used in this project, as well as auxiliary files, in case you would like to re-implement anything for yourself or see what we have done in more detail. Enjoy!
