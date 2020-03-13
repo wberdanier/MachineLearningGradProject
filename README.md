@@ -14,5 +14,22 @@ Using scikit-learn, we extracted features, such as the Histogram-of-Gradients (H
 
 We then analyzed how well these features distinguished among categories. For instance, the maximum of the HOG matrix and the average saturation both distinguished categories well: 
 
-![Average saturation](avg_sat.png) ![Maximum of HOG](max_hog.png)
+![Average saturation](features/avg_sat.png) ![Maximum of HOG](features/max_hog.png)
 
+while our fancier attempts to develop cross-correlations within color channels, such as the correlation function of the green and blue channels, did not:
+
+![Green-Blue correlation](features/gb_corr.png)
+
+# Model selection
+
+Once we had a sufficiently large feature matrix, we fitted to a variety of models in scikit-learn. In particular, we fit LogisticRegression, K-NearestNeighbors, RandomForest and SVM classifiers, which each had their strengths -- except for LogisticRegression, which performed worse when evaluated on the test set. In both plots below, the dashed line is random guessing.
+
+![LogisticRegression](model_performance/logreg.png) ![SVM](model_performance/SVM.png)
+
+In all, this tailored approach reached roughly 40% prediction accuracy on the test set.
+
+# Neural networks
+
+Finally, we implemented two neural networks in order to improve this performance. We began by implementing LeNet, a relatively simple early architecture designed to work on the MNIST handwritten digits dataset:
+
+![LeNet Architecture](LeNet.jpg) \[LeCun et al, 1998\]
