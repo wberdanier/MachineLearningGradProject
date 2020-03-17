@@ -26,7 +26,7 @@ Once we had a sufficiently large feature matrix, we fitted to a variety of model
 
 ![LogisticRegression](model_performance/logreg.png) ![SVM](model_performance/SVM.png)
 
-In all, this tailored approach reached roughly 40% prediction accuracy on the test set.
+In all, this tailored approach achieved roughly 40% prediction accuracy on the test set.
 
 # Neural networks
 
