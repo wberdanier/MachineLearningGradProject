@@ -8,7 +8,7 @@ The task for this project was to develop an image classifier from scratch. We we
 
 ![Example image file](sample_image.png) 
 
-Using scikit-learn, we extracted features from the training set, such as the Histogram-of-Gradients (HOG):
+Using scikit-learn, we extracted features from the training set, such as the Histogram-of-Oriented-Gradients (HOG):
 
 ![Example image feature](sample_image_HOG.png)
 
